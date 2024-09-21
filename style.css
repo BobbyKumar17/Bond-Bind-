@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('./White Black and Orange Illustrative Design Portfolio & Resume Website 1.png');
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: relative;
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;  
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 70px; 
+}
+
+.navbar-image {
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+    width: auto; 
+    z-index: 1; 
+    padding-left: 40px;
+}
+
+.icon-section {
+    position: relative; 
+    display: flex;
+    justify-content: flex-end; 
+    z-index: 2; 
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    border-radius: 100%;
+
+}
+
+.icon div {
+    text-align: center;
+    border-radius: 100%;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.line-break {
+    height: 2px;
+    background-color: rgb(92, 92, 189); 
+    box-shadow: 0 2px 5px rgba(51, 170, 206, 0.2); 
+    margin: 10px 0; 
+}
+
+
+.search-container {
+    padding: 20px 0;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 50px; 
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #007BFF; 
+}
+
+.search i {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    color: #aaa;
+    background-color: white;
+    border-radius: 50%; 
+    padding: 5px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .card-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* #jk {
+    border-radius: 100%;
+    border-width: 80px;
+    border-color: aqua;
+} */
+#ab{
+    border-radius: 100%;
+    border-color: blue;
+    border-width: 6px;
+    border-width: 20px;
+    padding-top: 30px;
+}
+#cd{
+    border-radius: 100%;
+    border-color: blue;
+    border-width: 20px;
+    padding-top: 30px;
+}
+#ef{
+    border-radius: 100%;
+    border-color: blue;
+    border-width: 20px;
+    padding-top: 30px;
+}
+#gh{
+    border-radius: 100%;
+    border-color: blue;
+    border-width: 20px;
+    padding-top: 30px;
+}
