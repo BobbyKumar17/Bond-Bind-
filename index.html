@@ -10,13 +10,11 @@
 <body>
 
   <div class="navbar">
-    
     <img src="./bb1c 1.png" alt="Navbar Image" class="navbar-image">
-    
     <div class="icon-section">
       <div class="icon">
-        <div id="jk">
-          <img src="./Frame 19.png" alt="Icon 1" id ="ab">
+        <div>
+          <img src="./Group 3.png" alt="Icon 1" id="ab">
           <p>Illustrations</p>
         </div>
         <div>
@@ -24,65 +22,75 @@
           <p>Stock Photos</p>
         </div>
         <div>
-          <img src="./Group 45.png" alt="Icon 3" id= "ef">
+          <img src="./BB.png" alt="Icon 3" id="ef">
           <p>Sounds</p>
         </div>
         <div>
-          <img src="./Group 46.png" alt="Icon 4" id ="gh">
+          <img src="./Group 46.png" alt="Icon 4" id="gh">
           <p>Blogs</p>
         </div>
       </div>
-      
     </div>
   </div>
-  <h6 style="text-align: left; margin-top: 1px; font-size: 8px; margin-left: 40px;">Bonds Bind helps you browse and download free images, illustrations, and design blogs.</h6>
-
-  <div class="line-break"><hr></div>
   
+  <h6 id="sd">Bond Bind helps you browse and download free images, Illustrations, and Design Blogs.</h6>
+  
+  <div class="line-break"><hr></div>
 
   <div class="search-container">
     <div class="search">
       <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Search...">
+      <input type="text" placeholder="Search" id="searchInput">
     </div>
   </div>
 
   <div class="container">
     <div class="card-grid">
       <div class="card">
-        <img src="./Frame 19.png" alt="Product 1">
+        <img src="./Group 44.png" alt="Product 1">
         <p>Girl in Photo</p>
       </div>
       <div class="card">
-        <img src="./Frame 19.png" alt="Product 2">
+        <img src="./Group 45.png" alt="Product 2">
+        <p style="padding-top: 80px;">Office Work</p>
+      </div>
+      <div class="card">
+        <img src="./Group 46.png" alt="Product 3">
+        <p>Boy in Office</p>
+      </div>
+      <div class="card">
+        <img src="./Group 44.png" alt="Product 4" >
         <p>Girl in Photo</p>
       </div>
       <div class="card">
-        <img src="./Frame 19.png" alt="Product 3">
+        <img src="./Group 44.png" alt="Product 5">
         <p>Girl in Photo</p>
       </div>
       <div class="card">
-        <img src="./Frame 19.png" alt="Product 4">
-        <p>Girl in Photo</p>
+        <img src="./Group 45.png" alt="Product 6">
+        <p  style="padding-top: 80px;">Office Work</p>
       </div>
       <div class="card">
-        <img src="./Frame 19.png" alt="Product 5">
-        <p>Girl in Photo</p>
+        <img src="./Group 46.png" alt="Product 7">
+        <p>Boy in Office</p>
       </div>
       <div class="card">
-        <img src="./Frame 19.png" alt="Product 6">
-        <p>Girl in Photo</p>
-      </div>
-      <div class="card">
-        <img src="./Frame 19.png" alt="Product 7">
-        <p>Girl in Photo</p>
-      </div>
-      <div class="card">
-        <img src="./Frame 19.png" alt="Product 8">
+        <img src="./Group 44.png" alt="Product 8">
         <p>Girl in Photo</p>
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        const query = this.value;
+        if (query) {
+          window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+        }
+      }
+    });
+  </script>
 
 </body>
 </html>
